@@ -1,0 +1,626 @@
+[
+  {
+    "type": "run",
+    "body": {
+      "pid": 22900,
+      "basename": "000.git.22900",
+      "command": [
+        "git",
+        "rev-parse",
+        "--abbrev-ref",
+        "--symbolic",
+        "@{u}"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 11928,
+      "basename": "001.git.11928",
+      "command": [
+        "git",
+        "rev-parse",
+        "--abbrev-ref",
+        "HEAD"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 18544,
+      "basename": "002.git.18544",
+      "command": [
+        "git",
+        "ls-remote",
+        "--get-url",
+        "origin"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 20588,
+      "basename": "003.git.20588",
+      "command": [
+        "git",
+        "log",
+        "-n",
+        "1",
+        "--pretty=format:%H"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 14020,
+      "basename": "004.git.14020",
+      "command": [
+        "git",
+        "log",
+        "-n",
+        "1",
+        "--pretty=format:%ar"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 8748,
+      "basename": "005.git.8748",
+      "command": [
+        "git",
+        "describe",
+        "--match",
+        "v*.*.*",
+        "--first-parent",
+        "--long",
+        "--tags"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 22576,
+      "basename": "006.git.22576",
+      "command": [
+        "git",
+        "log",
+        "-n",
+        "1",
+        "--pretty=format:%ad",
+        "--date=iso"
+      ],
+      "workingDirectory": "C:\\Program Files\\flutter",
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 18204,
+      "basename": "007.ver.18204",
+      "command": [
+        "ver"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": true,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "can_run",
+    "body": {
+      "executable": "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+      "result": true
+    }
+  },
+  {
+    "type": "can_run",
+    "body": {
+      "executable": "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\build-tools\\28.0.3\\aapt",
+      "result": true
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 11804,
+      "basename": "010.adb.11804",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+        "devices",
+        "-l"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 20080,
+      "basename": "011.adb.20080",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+        "-s",
+        "192.168.26.101:5555",
+        "shell",
+        "getprop"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "iso-8859-1",
+      "stderrEncoding": "iso-8859-1",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "can_run",
+    "body": {
+      "executable": "C:\\Program Files\\Android\\Android Studio\\jre\\bin\\java",
+      "result": true
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 23268,
+      "basename": "013.java.23268",
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jre\\bin\\java",
+        "-version"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 22884,
+      "basename": "014.gradlew.bat.22884",
+      "command": [
+        "C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\android\\gradlew.bat",
+        "-v"
+      ],
+      "environment": {
+        "ALLUSERSPROFILE": "C:\\ProgramData",
+        "APPDATA": "C:\\Users\\Aylin\\AppData\\Roaming",
+        "CACHE_DIR": "C:\\Program Files\\flutter\\bin\\cache",
+        "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+        "COMMONPROGRAMFILES(X86)": "C:\\Program Files (x86)\\Common Files",
+        "COMMONPROGRAMW6432": "C:\\Program Files\\Common Files",
+        "COMPUTERNAME": "DESKTOP-RMU68JP",
+        "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+        "DART": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe",
+        "DART_INSTALLED_VERSION": "58a1894a1cd798de2f9a206f157a90d45944028b",
+        "DART_REQUIRED_VERSION": "58a1894a1cd798de2f9a206f157a90d45944028b",
+        "DART_SDK_PATH": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk",
+        "DRIVERDATA": "C:\\Windows\\System32\\Drivers\\DriverData",
+        "ENGINE_STAMP": "C:\\Program Files\\flutter\\bin\\cache\\engine-dart-sdk.stamp",
+        "ENGINE_VERSION_PATH": "C:\\Program Files\\flutter\\bin\\internal\\engine.version",
+        "FLUTTER_ROOT": "C:\\Program Files\\flutter",
+        "FLUTTER_TOOLS_DIR": "C:\\Program Files\\flutter\\packages\\flutter_tools",
+        "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+        "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+        "HOMEDRIVE": "C:",
+        "HOMEPATH": "\\Users\\Aylin",
+        "LOCALAPPDATA": "C:\\Users\\Aylin\\AppData\\Local",
+        "LOCK_TIMESTAMP": "18.09.2018 22:40",
+        "LOGONSERVER": "\\\\DESKTOP-RMU68JP",
+        "MINGIT_PATH": "C:\\Program Files\\flutter\\bin\\mingit\\cmd",
+        "NEWER_FILE": "pubspec.lock",
+        "NUMBER_OF_PROCESSORS": "12",
+        "ONEDRIVE": "C:\\Users\\Aylin\\OneDrive",
+        "OS": "Windows_NT",
+        "PATH": "C:\\Program Files\\flutter\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Java\\jdk\\bin;C:\\Program Files\\Java\\jre\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\sqlite3;C:\\Users\\Aylin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\Aylin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Aylin\\AppData\\Roaming\\npm;C:\\flutter\\bin;C:\\Users\\Aylin\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\flutter\\bin\\mingit\\cmd",
+        "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+        "PROCESSOR_ARCHITECTURE": "AMD64",
+        "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+        "PROCESSOR_LEVEL": "6",
+        "PROCESSOR_REVISION": "9e0a",
+        "PROGRAMDATA": "C:\\ProgramData",
+        "PROGRAMFILES": "C:\\Program Files",
+        "PROGRAMFILES(X86)": "C:\\Program Files (x86)",
+        "PROGRAMW6432": "C:\\Program Files",
+        "PROMPT": "$P$G",
+        "PSMODULEPATH": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+        "PUB": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk\\bin\\pub.bat",
+        "PUBLIC": "C:\\Users\\Public",
+        "PUBSPEC_LOCK_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\pubspec.lock",
+        "PUBSPEC_YAML_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\pubspec.yaml",
+        "PUB_CACHE_PATH": "C:\\Program Files\\flutter\\.pub-cache",
+        "REVISION": "5ab9e70727d858def3a586db7fb98ee580352957",
+        "SCRIPT_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\bin\\flutter_tools.dart",
+        "SESSIONNAME": "Console",
+        "SNAPSHOT_PATH": "C:\\Program Files\\flutter\\bin\\cache\\flutter_tools.snapshot",
+        "STAMP_PATH": "C:\\Program Files\\flutter\\bin\\cache\\flutter_tools.stamp",
+        "STAMP_VALUE": "5ab9e70727d858def3a586db7fb98ee580352957",
+        "SYSTEMDRIVE": "C:",
+        "SYSTEMROOT": "C:\\Windows",
+        "TEMP": "C:\\Users\\Aylin\\AppData\\Local\\Temp",
+        "TMP": "C:\\Users\\Aylin\\AppData\\Local\\Temp",
+        "USERDOMAIN": "DESKTOP-RMU68JP",
+        "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-RMU68JP",
+        "USERNAME": "Aylin",
+        "USERPROFILE": "C:\\Users\\Aylin",
+        "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+        "WINDIR": "C:\\Windows",
+        "YAML_TIMESTAMP": "18.09.2018 22:35",
+        "JAVA_HOME": "C:\\Program Files\\Android\\Android Studio\\jre"
+      },
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 22596,
+      "basename": "015.gradlew.bat.22596",
+      "command": [
+        "C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\android\\gradlew.bat",
+        "app:properties"
+      ],
+      "workingDirectory": "C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\android",
+      "environment": {
+        "ALLUSERSPROFILE": "C:\\ProgramData",
+        "APPDATA": "C:\\Users\\Aylin\\AppData\\Roaming",
+        "CACHE_DIR": "C:\\Program Files\\flutter\\bin\\cache",
+        "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+        "COMMONPROGRAMFILES(X86)": "C:\\Program Files (x86)\\Common Files",
+        "COMMONPROGRAMW6432": "C:\\Program Files\\Common Files",
+        "COMPUTERNAME": "DESKTOP-RMU68JP",
+        "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+        "DART": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe",
+        "DART_INSTALLED_VERSION": "58a1894a1cd798de2f9a206f157a90d45944028b",
+        "DART_REQUIRED_VERSION": "58a1894a1cd798de2f9a206f157a90d45944028b",
+        "DART_SDK_PATH": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk",
+        "DRIVERDATA": "C:\\Windows\\System32\\Drivers\\DriverData",
+        "ENGINE_STAMP": "C:\\Program Files\\flutter\\bin\\cache\\engine-dart-sdk.stamp",
+        "ENGINE_VERSION_PATH": "C:\\Program Files\\flutter\\bin\\internal\\engine.version",
+        "FLUTTER_ROOT": "C:\\Program Files\\flutter",
+        "FLUTTER_TOOLS_DIR": "C:\\Program Files\\flutter\\packages\\flutter_tools",
+        "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+        "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+        "HOMEDRIVE": "C:",
+        "HOMEPATH": "\\Users\\Aylin",
+        "LOCALAPPDATA": "C:\\Users\\Aylin\\AppData\\Local",
+        "LOCK_TIMESTAMP": "18.09.2018 22:40",
+        "LOGONSERVER": "\\\\DESKTOP-RMU68JP",
+        "MINGIT_PATH": "C:\\Program Files\\flutter\\bin\\mingit\\cmd",
+        "NEWER_FILE": "pubspec.lock",
+        "NUMBER_OF_PROCESSORS": "12",
+        "ONEDRIVE": "C:\\Users\\Aylin\\OneDrive",
+        "OS": "Windows_NT",
+        "PATH": "C:\\Program Files\\flutter\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Java\\jdk\\bin;C:\\Program Files\\Java\\jre\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\sqlite3;C:\\Users\\Aylin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\Aylin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Aylin\\AppData\\Roaming\\npm;C:\\flutter\\bin;C:\\Users\\Aylin\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\flutter\\bin\\mingit\\cmd",
+        "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+        "PROCESSOR_ARCHITECTURE": "AMD64",
+        "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+        "PROCESSOR_LEVEL": "6",
+        "PROCESSOR_REVISION": "9e0a",
+        "PROGRAMDATA": "C:\\ProgramData",
+        "PROGRAMFILES": "C:\\Program Files",
+        "PROGRAMFILES(X86)": "C:\\Program Files (x86)",
+        "PROGRAMW6432": "C:\\Program Files",
+        "PROMPT": "$P$G",
+        "PSMODULEPATH": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+        "PUB": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk\\bin\\pub.bat",
+        "PUBLIC": "C:\\Users\\Public",
+        "PUBSPEC_LOCK_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\pubspec.lock",
+        "PUBSPEC_YAML_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\pubspec.yaml",
+        "PUB_CACHE_PATH": "C:\\Program Files\\flutter\\.pub-cache",
+        "REVISION": "5ab9e70727d858def3a586db7fb98ee580352957",
+        "SCRIPT_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\bin\\flutter_tools.dart",
+        "SESSIONNAME": "Console",
+        "SNAPSHOT_PATH": "C:\\Program Files\\flutter\\bin\\cache\\flutter_tools.snapshot",
+        "STAMP_PATH": "C:\\Program Files\\flutter\\bin\\cache\\flutter_tools.stamp",
+        "STAMP_VALUE": "5ab9e70727d858def3a586db7fb98ee580352957",
+        "SYSTEMDRIVE": "C:",
+        "SYSTEMROOT": "C:\\Windows",
+        "TEMP": "C:\\Users\\Aylin\\AppData\\Local\\Temp",
+        "TMP": "C:\\Users\\Aylin\\AppData\\Local\\Temp",
+        "USERDOMAIN": "DESKTOP-RMU68JP",
+        "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-RMU68JP",
+        "USERNAME": "Aylin",
+        "USERPROFILE": "C:\\Users\\Aylin",
+        "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+        "WINDIR": "C:\\Windows",
+        "YAML_TIMESTAMP": "18.09.2018 22:35",
+        "JAVA_HOME": "C:\\Program Files\\Android\\Android Studio\\jre"
+      },
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 23548,
+      "basename": "016.aapt.23548",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\build-tools\\28.0.3\\aapt",
+        "dump",
+        "xmltree",
+        "C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\build\\app\\outputs\\apk\\app.apk",
+        "AndroidManifest.xml"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 22760,
+      "basename": "017.adb.22760",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+        "-s",
+        "192.168.26.101:5555",
+        "logcat",
+        "-v",
+        "time",
+        "-t",
+        "1"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 17060,
+      "basename": "018.adb.17060",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+        "-s",
+        "192.168.26.101:5555",
+        "logcat",
+        "-v",
+        "time"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "mode": "normal",
+      "daemon": true,
+      "notResponding": false,
+      "exitCode": -1
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 11896,
+      "basename": "019.adb.11896",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+        "version"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 11916,
+      "basename": "020.adb.11916",
+      "command": [
+        "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+        "start-server"
+      ],
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "stdoutEncoding": "system",
+      "stderrEncoding": "system",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 0
+    }
+  },
+  {
+    "type": "can_run",
+    "body": {
+      "executable": "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\platform-tools\\adb",
+      "result": true
+    }
+  },
+  {
+    "type": "can_run",
+    "body": {
+      "executable": "C:\\Users\\Aylin\\AppData\\Local\\Android\\sdk\\build-tools\\28.0.3\\aapt",
+      "result": true
+    }
+  },
+  {
+    "type": "run",
+    "body": {
+      "pid": 21144,
+      "basename": "023.gradlew.bat.21144",
+      "command": [
+        "C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\android\\gradlew.bat",
+        "-q",
+        "-Ptarget=C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\lib/main.dart",
+        "-Pfilesystem-scheme=org-dartlang-root",
+        "assembleDebug"
+      ],
+      "workingDirectory": "C:\\Users\\Aylin\\Desktop\\ProgLanProject\\entrecor\\android",
+      "environment": {
+        "ALLUSERSPROFILE": "C:\\ProgramData",
+        "APPDATA": "C:\\Users\\Aylin\\AppData\\Roaming",
+        "CACHE_DIR": "C:\\Program Files\\flutter\\bin\\cache",
+        "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+        "COMMONPROGRAMFILES(X86)": "C:\\Program Files (x86)\\Common Files",
+        "COMMONPROGRAMW6432": "C:\\Program Files\\Common Files",
+        "COMPUTERNAME": "DESKTOP-RMU68JP",
+        "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+        "DART": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe",
+        "DART_INSTALLED_VERSION": "58a1894a1cd798de2f9a206f157a90d45944028b",
+        "DART_REQUIRED_VERSION": "58a1894a1cd798de2f9a206f157a90d45944028b",
+        "DART_SDK_PATH": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk",
+        "DRIVERDATA": "C:\\Windows\\System32\\Drivers\\DriverData",
+        "ENGINE_STAMP": "C:\\Program Files\\flutter\\bin\\cache\\engine-dart-sdk.stamp",
+        "ENGINE_VERSION_PATH": "C:\\Program Files\\flutter\\bin\\internal\\engine.version",
+        "FLUTTER_ROOT": "C:\\Program Files\\flutter",
+        "FLUTTER_TOOLS_DIR": "C:\\Program Files\\flutter\\packages\\flutter_tools",
+        "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+        "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+        "HOMEDRIVE": "C:",
+        "HOMEPATH": "\\Users\\Aylin",
+        "LOCALAPPDATA": "C:\\Users\\Aylin\\AppData\\Local",
+        "LOCK_TIMESTAMP": "18.09.2018 22:40",
+        "LOGONSERVER": "\\\\DESKTOP-RMU68JP",
+        "MINGIT_PATH": "C:\\Program Files\\flutter\\bin\\mingit\\cmd",
+        "NEWER_FILE": "pubspec.lock",
+        "NUMBER_OF_PROCESSORS": "12",
+        "ONEDRIVE": "C:\\Users\\Aylin\\OneDrive",
+        "OS": "Windows_NT",
+        "PATH": "C:\\Program Files\\flutter\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Java\\jdk\\bin;C:\\Program Files\\Java\\jre\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\sqlite3;C:\\Users\\Aylin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\Aylin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Aylin\\AppData\\Roaming\\npm;C:\\flutter\\bin;C:\\Users\\Aylin\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\flutter\\bin\\mingit\\cmd",
+        "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+        "PROCESSOR_ARCHITECTURE": "AMD64",
+        "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+        "PROCESSOR_LEVEL": "6",
+        "PROCESSOR_REVISION": "9e0a",
+        "PROGRAMDATA": "C:\\ProgramData",
+        "PROGRAMFILES": "C:\\Program Files",
+        "PROGRAMFILES(X86)": "C:\\Program Files (x86)",
+        "PROGRAMW6432": "C:\\Program Files",
+        "PROMPT": "$P$G",
+        "PSMODULEPATH": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+        "PUB": "C:\\Program Files\\flutter\\bin\\cache\\dart-sdk\\bin\\pub.bat",
+        "PUBLIC": "C:\\Users\\Public",
+        "PUBSPEC_LOCK_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\pubspec.lock",
+        "PUBSPEC_YAML_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\pubspec.yaml",
+        "PUB_CACHE_PATH": "C:\\Program Files\\flutter\\.pub-cache",
+        "REVISION": "5ab9e70727d858def3a586db7fb98ee580352957",
+        "SCRIPT_PATH": "C:\\Program Files\\flutter\\packages\\flutter_tools\\bin\\flutter_tools.dart",
+        "SESSIONNAME": "Console",
+        "SNAPSHOT_PATH": "C:\\Program Files\\flutter\\bin\\cache\\flutter_tools.snapshot",
+        "STAMP_PATH": "C:\\Program Files\\flutter\\bin\\cache\\flutter_tools.stamp",
+        "STAMP_VALUE": "5ab9e70727d858def3a586db7fb98ee580352957",
+        "SYSTEMDRIVE": "C:",
+        "SYSTEMROOT": "C:\\Windows",
+        "TEMP": "C:\\Users\\Aylin\\AppData\\Local\\Temp",
+        "TMP": "C:\\Users\\Aylin\\AppData\\Local\\Temp",
+        "USERDOMAIN": "DESKTOP-RMU68JP",
+        "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-RMU68JP",
+        "USERNAME": "Aylin",
+        "USERPROFILE": "C:\\Users\\Aylin",
+        "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+        "WINDIR": "C:\\Windows",
+        "YAML_TIMESTAMP": "18.09.2018 22:35",
+        "JAVA_HOME": "C:\\Program Files\\Android\\Android Studio\\jre",
+        "FLUTTER_ALREADY_LOCKED": "true"
+      },
+      "includeParentEnvironment": true,
+      "runInShell": false,
+      "mode": "normal",
+      "daemon": false,
+      "notResponding": false,
+      "exitCode": 1
+    }
+  }
+]

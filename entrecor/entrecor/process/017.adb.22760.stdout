@@ -1,0 +1,2 @@
+--------- beginning of main
+11-09 14:52:34.268 E/PlayCommon( 1655): [136] com.google.android.play.b.g.a(450): Failed to connect to server: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.

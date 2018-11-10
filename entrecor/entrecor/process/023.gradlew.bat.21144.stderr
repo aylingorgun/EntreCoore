@@ -1,0 +1,20 @@
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugGoogleServices'.
+> File google-services.json is missing. The Google Services Plugin cannot function without it. 
+   Searched Location: 
+  C:\Users\Aylin\Desktop\ProgLanProject\entrecor\android\app\src\nullnull\debug\google-services.json
+  C:\Users\Aylin\Desktop\ProgLanProject\entrecor\android\app\src\debug\nullnull\google-services.json
+  C:\Users\Aylin\Desktop\ProgLanProject\entrecor\android\app\src\nullnull\google-services.json
+  C:\Users\Aylin\Desktop\ProgLanProject\entrecor\android\app\src\debug\google-services.json
+  C:\Users\Aylin\Desktop\ProgLanProject\entrecor\android\app\src\nullnullDebug\google-services.json
+  C:\Users\Aylin\Desktop\ProgLanProject\entrecor\android\app\google-services.json
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUÝLD FAILED in 9s

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "829549474566",
+    "firebase_url": "https://entrecor-8d8dd.firebaseio.com",
+    "project_id": "entrecor-8d8dd",
+    "storage_bucket": "entrecor-8d8dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829549474566:android:0e549606cc970c59",
+        "android_client_info": {
+          "package_name": "com.example.entrecor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829549474566-2emdd4nivhd9k1din7gk4nth1dkcncpi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW6oNkNYYNNxFgW5VEwU7qOqnLp0CTt8o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
