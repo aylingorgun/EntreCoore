@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/entrecor.iml" filepath="$PROJECT_DIR$/entrecor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/entrecor_android.iml" filepath="$PROJECT_DIR$/entrecor_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/entrecor_android.iml" filepath="$PROJECT_DIR$/android/entrecor_android.iml" />
     </modules>
   </component>
 </project>
