@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
+import 'auth.dart';
+import 'auth_provider.dart';
+import 'root_page.dart';
 
 void main() {
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'EntreCor',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
+    return AuthProvider(
+      auth: Auth(),
+      child: MaterialApp(
+        title: 'Flutter login demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: RootPage(),
       ),
-      home: new LoginPage()
     );
   }
 }
-
