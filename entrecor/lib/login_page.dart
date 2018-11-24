@@ -42,17 +42,26 @@ class _LoginPageState extends State<LoginPage> {
     return false;
   }
 
+  final logo = Hero(
+    tag: 'hero',
+    child: CircleAvatar(
+      backgroundColor: Colors.transparent,
+      radius: 48.0,
+      child: Image.asset('assets/logo.png'),
+    ),
+  );
+
   void validateAndSubmit() async {
     if (validateAndSave()) {
       try {
         var auth = AuthProvider.of(context).auth;
         if (_formType == FormType.login) {
           String userId =
-          await auth.signInWithEmailAndPassword(_email, _password);
+              await auth.signInWithEmailAndPassword(_email, _password);
           print('Signed in: $userId');
         } else {
-          String userId = await auth
-              .createUserWithEmailAndPassword(_email, _password);
+          String userId =
+              await auth.createUserWithEmailAndPassword(_email, _password);
           print('Registered user: $userId');
         }
         widget.onSignedIn();
@@ -79,63 +88,106 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter login demo'),
-        ),
+        backgroundColor: Colors.white,
         body: Container(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.only(left: 24.0, right: 24.0),
             child: Form(
               key: formKey,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: buildInputs() + buildSubmitButtons(),
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget> [
+                  logo,
+                  SizedBox(height: 48.0,),
+                  Column(
+                    children: buildInputs() + buildSubmitButtons(),
+                  ),
+                ],
               ),
-            )));
+            ),
+          ),
+        );
   }
 
   List<Widget> buildInputs() {
     return [
       TextFormField(
         key: Key('email'),
-        decoration: InputDecoration(labelText: 'Email'),
+        decoration: InputDecoration(
+          hintText: 'Email',
+          contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0)
+          ),
+        ),
+        autofocus: false,
         validator: EmailFieldValidator.validate,
         onSaved: (value) => _email = value,
       ),
+      SizedBox(height: 16.0,),
       TextFormField(
         key: Key('password'),
-        decoration: InputDecoration(labelText: 'Password'),
+        decoration: InputDecoration(
+          hintText: 'Password',
+          contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0)
+          ),
+        ),
         obscureText: true,
+        autofocus: false,
         validator: PasswordFieldValidator.validate,
         onSaved: (value) => _password = value,
       ),
+      SizedBox(height: 24.0),
     ];
   }
 
   List<Widget> buildSubmitButtons() {
     if (_formType == FormType.login) {
       return [
-        RaisedButton(
-          key: Key('signIn'),
-          child: Text('Login', style: TextStyle(fontSize: 20.0)),
-          onPressed: validateAndSubmit,
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: 16.0),
+          child: Material(
+            borderRadius: BorderRadius.circular(12.0),
+            shadowColor: Colors.lightBlueAccent.shade100,
+            elevation: 5.0,
+            child: MaterialButton(
+              minWidth: 150.0,
+              height: 42.0,
+              onPressed: validateAndSubmit,
+              color: Colors.lightBlueAccent,
+              child:Text('Log In', style: TextStyle(color: Colors.white,fontSize: 20.0),),
+            ),
+          ),
         ),
+        
         FlatButton(
-          child: Text('Create an account',
-              style: TextStyle(fontSize: 20.0)),
+          child: Text('Create an Account', style: TextStyle(color: Colors.black54, fontSize: 16.0)),
           onPressed: moveToRegister,
         ),
       ];
     } else {
       return [
-        RaisedButton(
-          child: Text('Create an account',
-              style: TextStyle(fontSize: 20.0)),
-          onPressed: validateAndSubmit,
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: 16.0),
+          child: Material(
+            borderRadius: BorderRadius.circular(12.0),
+            shadowColor: Colors.lightBlueAccent.shade100,
+            elevation: 5.0,
+            child: MaterialButton(
+              minWidth: 150.0,
+              height: 42.0,
+              onPressed: validateAndSubmit,
+              color: Colors.lightBlueAccent,
+              child:Text('Create an account', style: TextStyle(color: Colors.white,fontSize: 16.0),),
+            ),
+          ),
         ),
         FlatButton(
-          child: Text('Have an account? Login',
-              style: TextStyle(fontSize: 20.0)),
-          onPressed: moveToLogin,
+          child:
+            Text('Have an account? Login', style: TextStyle(color: Colors.black54, fontSize: 16.0)),
+            onPressed: moveToLogin,
         ),
       ];
     }
