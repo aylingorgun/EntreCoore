@@ -139,13 +139,13 @@ class _LoginPageState extends State<LoginPage> {
         validator: PasswordFieldValidator.validate,
         onSaved: (value) => _password = value,
       ),
-      SizedBox(height: 24.0),
     ];
   }
 
   List<Widget> buildSubmitButtons() {
     if (_formType == FormType.login) {
       return [
+        SizedBox(height: 24.0),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 16.0),
           child: Material(
