@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'auth_provider.dart';
+import 'package:entrecor/note_page.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({this.onSignedOut});
@@ -18,18 +19,29 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome'),
-          actions: <Widget>[
-            FlatButton(
-                child: Text('Logout',
-                    style: TextStyle(fontSize: 17.0, color: Colors.white)),
-                onPressed: () => _signOut(context))
-          ],
-        ),
-        body: Container(
-          child: Center(
-              child: Text('Welcome', style: TextStyle(fontSize: 32.0))),
-        ));
+      appBar: AppBar(
+        title: Text('Welcome'),
+        actions: <Widget>[
+          FlatButton(
+              child: Text('Logout',
+                  style: TextStyle(fontSize: 17.0, color: Colors.white)),
+              onPressed: () => _signOut(context))
+        ],
+      ),
+      body: Container(
+        child: Center(child: Text('Welcome', style: TextStyle(fontSize: 32.0))),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => NotePage()),
+                  );
+                },
+        tooltip: 'Add Note',
+        child: Icon(Icons.note_add),
+      ),
+    );
   }
 }
+
