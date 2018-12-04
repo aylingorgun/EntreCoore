@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'auth_provider.dart';
 import 'package:entrecor/note_page.dart';
+import 'NewsPage.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({this.onSignedOut});
@@ -28,9 +29,7 @@ class HomePage extends StatelessWidget {
               onPressed: () => _signOut(context))
         ],
       ),
-      body: Container(
-        child: Center(child: Text('Welcome', style: TextStyle(fontSize: 32.0))),
-      ),
+      body: NewsPage(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
