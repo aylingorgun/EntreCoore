@@ -1,3 +1,4 @@
+import 'package:entrecor/Kanban.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
@@ -49,6 +50,7 @@ class NewsPageState extends State<NewsPage> {
                     data[index]['title'],
                     textAlign: TextAlign.center,
                     style: TextStyle(fontWeight: FontWeight.bold),
+                    overflow: TextOverflow.ellipsis,
                   ),
                   padding: const EdgeInsets.all(20.0),
                 ),
@@ -59,11 +61,10 @@ class NewsPageState extends State<NewsPage> {
                   padding: const EdgeInsets.all(10.0),
                 ),
                 new Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     new Text(
                       data[index]['author'],
-                      textAlign: TextAlign.left,
+                      textAlign: TextAlign.right,
                     ),
                   ],
                 ),

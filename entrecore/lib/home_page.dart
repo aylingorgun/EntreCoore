@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'auth_provider.dart';
 import 'package:entrecor/note_page.dart';
 import 'NewsPage.dart';
+import 'Kanban.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({this.onSignedOut});
@@ -26,21 +27,30 @@ class HomePage extends StatelessWidget {
           FlatButton(
               child: Text('Logout',
                   style: TextStyle(fontSize: 17.0, color: Colors.white)),
-              onPressed: () => _signOut(context))
+              onPressed: () => _signOut(context)),
+          FlatButton(
+            child: Text('Kanban',
+                style: TextStyle(fontSize: 17.0, color: Colors.white)),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => KanbanPage()),
+              );
+            },
+          )
         ],
       ),
       body: NewsPage(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => NotePage()),
-                  );
-                },
+            context,
+            MaterialPageRoute(builder: (context) => NotePage()),
+          );
+        },
         tooltip: 'Add Note',
         child: Icon(Icons.note_add),
       ),
     );
   }
 }
-

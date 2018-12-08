@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return AuthProvider(
       auth: Auth(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter login demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
