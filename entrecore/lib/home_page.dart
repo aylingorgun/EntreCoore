@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'auth_provider.dart';
 import 'package:entrecor/note_page.dart';
-import 'NewsPage.dart';
-import 'Kanban.dart';
+import 'package:flutter/widgets.dart';
+import 'Tabbaar.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({this.onSignedOut});
@@ -28,19 +28,9 @@ class HomePage extends StatelessWidget {
               child: Text('Logout',
                   style: TextStyle(fontSize: 17.0, color: Colors.white)),
               onPressed: () => _signOut(context)),
-          FlatButton(
-            child: Text('Kanban',
-                style: TextStyle(fontSize: 17.0, color: Colors.white)),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => KanbanPage()),
-              );
-            },
-          )
         ],
       ),
-      body: NewsPage(),
+      body: Tabs(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(

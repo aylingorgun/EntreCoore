@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'auth.dart';
 import 'auth_provider.dart';
-import 'root_page.dart';
+import 'root_page.dart' ;
+
 
 void main() {
   runApp(MyApp());
@@ -16,10 +17,11 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter login demo',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.red,
         ),
         home: RootPage(),
       ),
     );
   }
 }
+
