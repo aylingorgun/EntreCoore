@@ -1,8 +1,8 @@
-import 'package:entrecor/Kanban.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'web.dart';
 
 class NewsPage extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class NewsPageState extends State<NewsPage> {
   final String url =
       'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=e6dba1fdf08b43a2b2ddc4562d38d0b1';
   List data;
-
+  
   @override
   void initState() {
     super.initState();
@@ -27,8 +27,8 @@ class NewsPageState extends State<NewsPage> {
     setState(() {
       var resBody = json.decode(res.body);
       data = resBody["articles"];
+      CircularProgressIndicator();
     });
-
     return "Success !";
   }
 
@@ -37,41 +37,43 @@ class NewsPageState extends State<NewsPage> {
     return new Scaffold(
       body: new ListView.builder(
         itemCount: data == null ? 0 : data.length,
-        scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
-          return SizedBox(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
-            child: new Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                new Container(
-                  child: new Text(
-                    data[index]['title'],
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  padding: const EdgeInsets.all(20.0),
-                ),
-                new Container(
-                  child: new Text(
-                    data[index]['description'],
-                  ),
-                  padding: const EdgeInsets.all(10.0),
-                ),
-                new Column(
-                  children: <Widget>[
-                    new Text(
-                      data[index]['author'],
-                      textAlign: TextAlign.right,
+          return Container(
+            child: Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      var route = new MaterialPageRoute(
+                        builder: (BuildContext context,) => new WebPage(value: index),
+                      );
+                      Navigator.of(context).push(route);
+                    },
+                    child: Card(
+                      child: Container(
+                        decoration: new BoxDecoration(
+                          border: new Border.all(color: Colors.redAccent)
+                        ),
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              data[index]['title'],
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              data[index]['description'],
+                              style: TextStyle(fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ],
-                ),
-                 new Card(
-                  child: new Text(''), // This is because card looks better Flutter doesn't have vertical dividers yet.
-                ),
-              ],
+                  ),
+                ],
+              ),
             ),
           );
         },

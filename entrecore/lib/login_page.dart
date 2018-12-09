@@ -131,7 +131,7 @@ class _LoginPageState extends State<LoginPage> {
           hintText: 'Password',
           contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(32.0)
+            borderRadius: BorderRadius.circular(32.0),
           ),
         ),
         obscureText: true,
@@ -150,20 +150,20 @@ class _LoginPageState extends State<LoginPage> {
           padding: EdgeInsets.symmetric(vertical: 16.0),
           child: Material(
             borderRadius: BorderRadius.circular(12.0),
-            shadowColor: Colors.lightBlueAccent.shade100,
+            shadowColor: Colors.redAccent.shade100,
             elevation: 5.0,
             child: MaterialButton(
               minWidth: 150.0,
               height: 42.0,
               onPressed: validateAndSubmit,
-              color: Colors.lightBlueAccent,
+              color: Colors.redAccent,
               child:Text('Log In', style: TextStyle(color: Colors.white,fontSize: 20.0),),
             ),
           ),
         ),
         
         FlatButton(
-          child: Text('Create an Account', style: TextStyle(color: Colors.black54, fontSize: 16.0)),
+          child: Text('Create an Account', style: TextStyle(color: Colors.redAccent[100], fontSize: 16.0)),
           onPressed: moveToRegister,
         ),
       ];
@@ -173,20 +173,20 @@ class _LoginPageState extends State<LoginPage> {
           padding: EdgeInsets.symmetric(vertical: 16.0),
           child: Material(
             borderRadius: BorderRadius.circular(12.0),
-            shadowColor: Colors.lightBlueAccent.shade100,
+            shadowColor: Colors.redAccent.shade100,
             elevation: 5.0,
             child: MaterialButton(
               minWidth: 150.0,
               height: 42.0,
               onPressed: validateAndSubmit,
-              color: Colors.lightBlueAccent,
+              color: Colors.redAccent,
               child:Text('Create an account', style: TextStyle(color: Colors.white,fontSize: 16.0),),
             ),
           ),
         ),
         FlatButton(
           child:
-            Text('Have an account? Login', style: TextStyle(color: Colors.black54, fontSize: 16.0)),
+            Text('Have an account? Login', style: TextStyle(color: Colors.redAccent[100], fontSize: 16.0)),
             onPressed: moveToLogin,
         ),
       ];

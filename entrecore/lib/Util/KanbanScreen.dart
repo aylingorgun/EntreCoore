@@ -4,14 +4,16 @@ import 'package:entrecor/Util/dateformatter.dart';
 import 'package:flutter/material.dart';
 
 class KanbanScreen extends StatefulWidget {
+
   @override
-  _KanbanScreenState createState() => _KanbanScreenState();
+  KanbanScreenState createState() => KanbanScreenState();
+  
 }
 
-class _KanbanScreenState extends State<KanbanScreen> {
+class KanbanScreenState extends State<KanbanScreen> {
   final TextEditingController _textEditingController =
       new TextEditingController();
-
+  
   var db = new DatabaseHelper();
 
   final List<TODOItem> _itemList = <TODOItem>[];
@@ -78,12 +80,13 @@ class _KanbanScreenState extends State<KanbanScreen> {
         child: ListTile(
           title: Icon(Icons.add),
         ),
-        onPressed: _showFormDialog,
+        onPressed: showFormDialog,
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 
-  void _showFormDialog() {
+    void showFormDialog() {
     var alert = new AlertDialog(
       content: Row(
         children: <Widget>[
@@ -176,7 +179,7 @@ class _KanbanScreenState extends State<KanbanScreen> {
         context: context,
         builder: (_) {
           return alert;
-        });
+        });   
   }
 
   void _handleSubmittedUpdate(int index, TODOItem item) {

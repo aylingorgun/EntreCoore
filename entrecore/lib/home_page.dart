@@ -25,22 +25,33 @@ class HomePage extends StatelessWidget {
         title: Text('Welcome'),
         actions: <Widget>[
           FlatButton(
-              child: Text('Logout',
-                  style: TextStyle(fontSize: 17.0, color: Colors.white)),
+              child: Icon(Icons.exit_to_app, color: Colors.white,),
               onPressed: () => _signOut(context)),
         ],
       ),
       body: Tabs(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => NotePage()),
-          );
-        },
-        tooltip: 'Add Note',
-        child: Icon(Icons.note_add),
-      ),
+      floatingActionButton:Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            FloatingActionButton(
+              heroTag: 'FAB1',
+                    onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NotePage()),
+                );
+              },
+              tooltip: 'Add Note',
+              child: Icon(Icons.note_add),
+            ),
+            /*FloatingActionButton(
+              heroTag: 'FAB2',
+              child: Icon(Icons.share,color: Colors.white,),
+              onPressed: null,
+            ),*/
+          ],
+        )
     );
   }
 }
