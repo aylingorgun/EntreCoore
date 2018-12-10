@@ -24,12 +24,12 @@ class MyNoteListState extends State<MyNoteList> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: Text('Notes',
+        title: Text('NOTES',
             style: TextStyle(
-                fontSize: 16.0,
-                color: Colors.yellowAccent,
+              fontSize: 16.0,
+              color: Colors.white,
             )),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.redAccent,
       ),
       body: new Container(
         padding: EdgeInsets.all(16.0),
@@ -48,7 +48,7 @@ class MyNoteListState extends State<MyNoteList> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Container(
-                                  padding: const EdgeInsets.only(bottom: 8.0),
+                                  padding: const EdgeInsets.only(bottom: 8.0,top: 3.0),
                                   child: Text(
                                     snapshot.data[index].topic,
                                     style:
@@ -59,6 +59,8 @@ class MyNoteListState extends State<MyNoteList> {
                                   snapshot.data[index].date,
                                   style: TextStyle(color: Colors.grey[500]),
                                 ),
+                                SizedBox(height: 5.0,),
+                                Divider(height: 10.0,color: Colors.red,),
                               ],
                             ),
                           ),
@@ -83,15 +85,15 @@ class MyNoteListState extends State<MyNoteList> {
                                                     decoration: InputDecoration(
                                                         hintText:
                                                             '${snapshot.data[index].topic}'),
-                                                    controller: controller_topic,
+                                                    controller:
+                                                        controller_topic,
                                                   ),
                                                   TextFormField(
                                                     autofocus: false,
                                                     decoration: InputDecoration(
                                                         hintText:
                                                             '${snapshot.data[index].date}'),
-                                                    controller:
-                                                        controller_date,
+                                                    controller: controller_date,
                                                   ),
                                                 ],
                                               ),

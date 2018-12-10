@@ -39,13 +39,13 @@ class TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
           new Tab(
             child: new Text(
               "News",
-              style: new TextStyle(color: Colors.white),
+              style: new TextStyle(color: Colors.black),
             ),
           ),
           new Tab(
             child: new Text(
               "TODO",
-              style: new TextStyle(color: Colors.white),
+              style: new TextStyle(color: Colors.black),
             ),
           ),
         ],

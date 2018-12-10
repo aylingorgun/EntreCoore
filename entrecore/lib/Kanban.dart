@@ -5,9 +5,6 @@ class KanbanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: Text("Kanban"),
-      ),
       body: new KanbanScreen(),
     );
   }
