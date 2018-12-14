@@ -156,7 +156,7 @@ class _LoginPageState extends State<LoginPage> {
               minWidth: 150.0,
               height: 42.0,
               onPressed: validateAndSubmit,
-              color: Colors.redAccent,
+              color: Colors.red,
               child:Text('Log In', style: TextStyle(color: Colors.white,fontSize: 20.0),),
             ),
           ),
